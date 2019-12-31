@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "609592349970",
+    "firebase_url": "https://tasarimprojesiytu.firebaseio.com",
+    "project_id": "tasarimprojesiytu",
+    "storage_bucket": "tasarimprojesiytu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609592349970:android:380cc92001b8b453cf4fcb",
+        "android_client_info": {
+          "package_name": "com.example.tasarmprojesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609592349970-pik0jke6t44sjc8qerdk9ah3ov48iuo9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tasarmprojesi",
+            "certificate_hash": "5124b342b6b9ef10f11e301585266b4b30dcadeb"
+          }
+        },
+        {
+          "client_id": "609592349970-g0tg90l3iniugb6jqd7gef2c29hb0qh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnVJ7OCQE6IXHDnaYhNEQqQojzWJoskxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609592349970-g0tg90l3iniugb6jqd7gef2c29hb0qh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
