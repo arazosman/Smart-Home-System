@@ -36,7 +36,7 @@ Users can display how much energy consumed from renewable energy sources and how
 
 ## Installation
 
-Download and install **Akıllı Ev Sistemi.apk** onto your Android smartphone to try the application. You can use **u1** for user name and **p1** for password. Note that the system connected to a temporary Firebase database. If you want to use the app with full functionality, generate your own Firebase database and connect it to the Android project: https://firebase.google.com/docs/android/setup (You can figure out what should be database variables from the code.)
+Download and install **Smart Home System.apk** onto your Android smartphone to try the application. You can use **u1** for user name and **p1** for password. Note that the system connected to a temporary Firebase database. If you want to use the app with full functionality, generate your own Firebase database and connect it to the Android project: https://firebase.google.com/docs/android/setup (You can figure out what should be database variables from the code.)
 
 
 ## Connection to a Real Hardware
