@@ -8,31 +8,31 @@ Smart Home System is an Android app that allows you to control your home. Google
 
 Users can login to system with their user names and passwords in the login page.
 
-<img src="screenshots/login.jpg" width="250">
+<img src="Screenshots/login.jpg" width="250">
 
 ### Control Page
 
 Users can activate/deactivate their devices in the control page.
 
-<img src="screenshots/control.jpg" width="250">
+<img src="Screenshots/control.jpg" width="250">
 
 ### Timer Page
 
 Users can set activated time intervals for their devices in the timer page.
 
-<img src="screenshots/timer.jpg" width="250">
+<img src="Screenshots/timer.jpg" width="250">
 
 ### Bill Page
 
 Users can display their usage details and payments for their devices in the bill page.
 
-<img src="screenshots/bill.jpg" width="250">
+<img src="Screenshots/bill.jpg" width="250">
 
 ### Details Page
 
 Users can display how much energy consumed from renewable energy sources and how much they save up from these sources in the details page. 
 
-<img src="screenshots/details.jpg" width="250">
+<img src="Screenshots/details.jpg" width="250">
 
 ## Installation
 
