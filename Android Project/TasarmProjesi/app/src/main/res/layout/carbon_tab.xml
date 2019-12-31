@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CarbonFragment">
+
+    <!--
+    <ImageView
+        android:id="@+id/leaf_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf" />
+
+    <TextView
+        android:id="@+id/text_carbon"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Kullanmış olduğunuz toplam 15000 kW'lık enerjinin  500 kW'ını yenilenebilir enerjiden sağladığınız için 50 ₺ tasarruf ettiniz."
+        app:layout_constraintEnd_toEndOf="@+id/leaf_icon"
+        app:layout_constraintStart_toStartOf="@+id/leaf_icon"
+        app:layout_constraintTop_toBottomOf="@+id/leaf_icon" />
+
+    <TextView
+        android:id="@+id/text_carbon2"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Yenilenebilir enerji kullanımınızla birlikte doğaya salınacak 215 kg'lık karbondioksit salınımına engel oldunuz."
+        app:layout_constraintEnd_toEndOf="@+id/text_carbon"
+        app:layout_constraintStart_toStartOf="@+id/text_carbon"
+        app:layout_constraintTop_toBottomOf="@+id/text_carbon" />
+        -->
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savingText" />
+
+    <TextView
+        android:id="@+id/costHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Fiyat Tarifesi"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costIcon"
+        app:layout_constraintStart_toEndOf="@+id/costIcon"
+        app:layout_constraintTop_toTopOf="@+id/costIcon" />
+
+    <ImageView
+        android:id="@+id/costIcon"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/cost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tariffImage"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/tariff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costHeader" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tariffImage" />
+
+    <TextView
+        android:id="@+id/savingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Tasarruf"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/savingIcon"
+        app:layout_constraintStart_toEndOf="@+id/savingIcon"
+        app:layout_constraintTop_toTopOf="@+id/savingIcon" />
+
+    <ImageView
+        android:id="@+id/savingIcon"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/saving"
+        app:layout_constraintStart_toStartOf="@+id/costIcon"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/savingText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savingHeader" />
+
+    <TextView
+        android:id="@+id/carbonHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Karbon Ayak İzi"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/carbonIcon"
+        app:layout_constraintStart_toEndOf="@+id/carbonIcon"
+        app:layout_constraintTop_toTopOf="@+id/carbonIcon" />
+
+    <ImageView
+        android:id="@+id/carbonIcon"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/leaf"
+        app:layout_constraintStart_toStartOf="@+id/savingIcon"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/carbonText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carbonHeader" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

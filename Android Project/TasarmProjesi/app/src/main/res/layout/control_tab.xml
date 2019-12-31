@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ControlFragment">
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="ÇIKIŞ"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView_fan"
+        app:layout_constraintTop_toBottomOf="@+id/switch_fan" />
+
+    <ImageView
+        android:id="@+id/imageView_washer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/washer" />
+
+    <Switch
+        android:id="@+id/switch_washer"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_washer"
+        app:layout_constraintTop_toBottomOf="@+id/textView_washer" />
+
+    <ImageButton
+        android:id="@+id/timer_washer"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_washer"
+        app:layout_constraintTop_toBottomOf="@+id/textView_washer" />
+
+    <TextView
+        android:id="@+id/textView_washer"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Çamaşır Makinesi"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_washer"
+        app:layout_constraintStart_toStartOf="@+id/imageView_washer"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_washer" />
+
+    <TextView
+        android:id="@+id/textView_tv"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Televizyon"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_tv"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/imageView_tv"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_tv" />
+
+    <ImageView
+        android:id="@+id/imageView_tv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_washer"
+        app:layout_constraintStart_toStartOf="@+id/imageView_washer"
+        app:layout_constraintTop_toBottomOf="@+id/switch_washer"
+        app:srcCompat="@drawable/tv" />
+
+    <Switch
+        android:id="@+id/switch_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tv" />
+
+    <ImageButton
+        android:id="@+id/timer_tv"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView_tv" />
+
+    <TextView
+        android:id="@+id/textView_oven"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Fırın"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_oven"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/imageView_oven"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_oven" />
+
+    <ImageView
+        android:id="@+id/imageView_oven"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_tv"
+        app:layout_constraintStart_toStartOf="@+id/imageView_tv"
+        app:layout_constraintTop_toBottomOf="@+id/switch_tv"
+        app:srcCompat="@drawable/oven" />
+
+    <Switch
+        android:id="@+id/switch_oven"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_oven"
+        app:layout_constraintTop_toBottomOf="@+id/textView_oven" />
+
+    <ImageButton
+        android:id="@+id/timer_oven"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_oven"
+        app:layout_constraintTop_toBottomOf="@+id/textView_oven" />
+
+    <ImageView
+        android:id="@+id/imageView_dishwasher"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fridge"
+        app:layout_constraintStart_toEndOf="@+id/imageView_washer"
+        app:layout_constraintTop_toTopOf="@+id/imageView_washer"
+        app:srcCompat="@drawable/dishwasher" />
+
+    <Switch
+        android:id="@+id/switch_dishwasher"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_dishwasher"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dishwasher" />
+
+    <ImageButton
+        android:id="@+id/timer_dishwasher"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_dishwasher"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dishwasher" />
+
+    <TextView
+        android:id="@+id/textView_dishwasher"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Bulaşık Makinesi"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_dishwasher"
+        app:layout_constraintStart_toStartOf="@+id/imageView_dishwasher"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_dishwasher" />
+
+    <ImageView
+        android:id="@+id/imageView_pc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_dishwasher"
+        app:layout_constraintStart_toStartOf="@+id/textView_dishwasher"
+        app:layout_constraintTop_toBottomOf="@+id/switch_dishwasher"
+        app:srcCompat="@drawable/pc" />
+
+    <Switch
+        android:id="@+id/switch_pc"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_pc"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pc" />
+
+    <ImageButton
+        android:id="@+id/timer_pc"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_pc"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pc" />
+
+    <TextView
+        android:id="@+id/textView_pc"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Bilgisayar"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_pc"
+        app:layout_constraintStart_toStartOf="@+id/imageView_pc"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_pc" />
+
+    <ImageView
+        android:id="@+id/imageView_iron"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_pc"
+        app:layout_constraintStart_toStartOf="@+id/textView_pc"
+        app:layout_constraintTop_toBottomOf="@+id/switch_pc"
+        app:srcCompat="@drawable/iron" />
+
+    <Switch
+        android:id="@+id/switch_iron"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_iron"
+        app:layout_constraintTop_toBottomOf="@+id/textView_iron" />
+
+    <ImageButton
+        android:id="@+id/timer_iron"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_iron"
+        app:layout_constraintTop_toBottomOf="@+id/textView_iron" />
+
+    <TextView
+        android:id="@+id/textView_iron"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Ütü"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_iron"
+        app:layout_constraintStart_toStartOf="@+id/imageView_iron"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_iron" />
+
+    <ImageView
+        android:id="@+id/imageView_fridge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_dishwasher"
+        app:srcCompat="@drawable/fridge" />
+
+    <Switch
+        android:id="@+id/switch_fridge"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fridge" />
+
+    <ImageButton
+        android:id="@+id/timer_fridge"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fridge" />
+
+    <TextView
+        android:id="@+id/textView_fridge"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Buzdolabı"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_fridge"
+        app:layout_constraintStart_toStartOf="@+id/imageView_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fridge" />
+
+    <ImageView
+        android:id="@+id/imageView_bulb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_fridge"
+        app:layout_constraintStart_toStartOf="@+id/textView_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/switch_fridge"
+        app:srcCompat="@drawable/bulb" />
+
+    <Switch
+        android:id="@+id/switch_bulb"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_bulb"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bulb" />
+
+    <ImageButton
+        android:id="@+id/timer_bulb"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_bulb"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bulb" />
+
+    <TextView
+        android:id="@+id/textView_bulb"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Aydınlatma"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_bulb"
+        app:layout_constraintStart_toStartOf="@+id/imageView_bulb"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_bulb" />
+
+    <ImageView
+        android:id="@+id/imageView_fan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_bulb"
+        app:layout_constraintStart_toStartOf="@+id/textView_bulb"
+        app:layout_constraintTop_toBottomOf="@+id/switch_bulb"
+        app:srcCompat="@drawable/fan" />
+
+    <Switch
+        android:id="@+id/switch_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleX="0.85"
+        android:scaleY="0.85"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintStart_toStartOf="@+id/textView_fan"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fan" />
+
+    <ImageButton
+        android:id="@+id/timer_fan"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="3dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_fan"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fan" />
+
+    <TextView
+        android:id="@+id/textView_fan"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Klima"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_fan"
+        app:layout_constraintStart_toStartOf="@+id/imageView_fan"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

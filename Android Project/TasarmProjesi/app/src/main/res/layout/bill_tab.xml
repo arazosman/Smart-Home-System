@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".BillFragment">
+
+    <TextView
+        android:id="@+id/kw_fan"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_fan" />
+
+    <TextView
+        android:id="@+id/kw_iron"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_iron" />
+
+    <TextView
+        android:id="@+id/kw_oven"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_oven" />
+
+    <TextView
+        android:id="@+id/kw_bulb"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_bulb" />
+
+    <TextView
+        android:id="@+id/kw_pc"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_pc" />
+
+    <TextView
+        android:id="@+id/kw_tv"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_tv" />
+
+    <TextView
+        android:id="@+id/kw_fridge"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_fridge" />
+
+    <TextView
+        android:id="@+id/kw_dishwasher"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_dishwasher" />
+
+    <TextView
+        android:id="@+id/kw_washer"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="15 kW"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/icon_washer" />
+
+    <TextView
+        android:id="@+id/textView_kullanim"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Kullanım"
+        android:textColor="#e67e22"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/textView_cihaz" />
+
+    <TextView
+        android:id="@+id/textView_cihaz"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Cihaz"
+        android:textColor="#e67e22"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_sure"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Süre"
+        android:textColor="#e67e22"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_cihaz"
+        app:layout_constraintTop_toTopOf="@+id/textView_cihaz" />
+
+    <TextView
+        android:id="@+id/textView_tutar"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="Tutar"
+        android:textColor="#e67e22"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView_kullanim"
+        app:layout_constraintTop_toTopOf="@+id/textView_cihaz" />
+
+    <ImageView
+        android:id="@+id/icon_washer"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textView_cihaz"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cihaz"
+        app:srcCompat="@drawable/washer_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_washer"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toEndOf="@+id/icon_washer"
+        app:layout_constraintTop_toTopOf="@+id/icon_washer"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_washer"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_washer" />
+
+    <TextView
+        android:id="@+id/total_washer"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_washer" />
+
+
+    <ImageView
+        android:id="@+id/icon_dishwasher"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_washer"
+        app:layout_constraintStart_toStartOf="@+id/icon_washer"
+        app:layout_constraintTop_toBottomOf="@+id/icon_washer"
+        app:srcCompat="@drawable/dishwasher_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_dishwasher"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_washer"
+        app:layout_constraintStart_toStartOf="@+id/onoff_washer"
+        app:layout_constraintTop_toTopOf="@+id/icon_dishwasher"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_dishwasher"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_dishwasher" />
+
+    <TextView
+        android:id="@+id/total_dishwasher"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_dishwasher" />
+
+
+    <ImageView
+        android:id="@+id/icon_fridge"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_dishwasher"
+        app:layout_constraintStart_toStartOf="@+id/icon_dishwasher"
+        app:layout_constraintTop_toBottomOf="@+id/icon_dishwasher"
+        app:srcCompat="@drawable/fridge_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_fridge"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_washer"
+        app:layout_constraintStart_toStartOf="@+id/onoff_washer"
+        app:layout_constraintTop_toTopOf="@+id/icon_fridge"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_fridge"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_fridge" />
+
+    <TextView
+        android:id="@+id/total_fridge"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_fridge" />
+
+
+    <ImageView
+        android:id="@+id/icon_tv"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_fridge"
+        app:layout_constraintStart_toStartOf="@+id/icon_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/icon_fridge"
+        app:srcCompat="@drawable/tv_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_tv"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_fridge"
+        app:layout_constraintStart_toStartOf="@+id/onoff_fridge"
+        app:layout_constraintTop_toTopOf="@+id/icon_tv"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_tv" />
+
+    <TextView
+        android:id="@+id/total_tv"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_tv" />
+
+
+    <ImageView
+        android:id="@+id/icon_pc"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_tv"
+        app:layout_constraintStart_toStartOf="@+id/icon_tv"
+        app:layout_constraintTop_toBottomOf="@+id/icon_tv"
+        app:srcCompat="@drawable/pc_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_pc"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_tv"
+        app:layout_constraintStart_toStartOf="@+id/onoff_tv"
+        app:layout_constraintTop_toTopOf="@+id/icon_pc"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_pc"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_pc" />
+
+    <TextView
+        android:id="@+id/total_pc"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_pc" />
+
+
+    <ImageView
+        android:id="@+id/icon_bulb"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_pc"
+        app:layout_constraintStart_toStartOf="@+id/icon_pc"
+        app:layout_constraintTop_toBottomOf="@+id/icon_pc"
+        app:srcCompat="@drawable/bulb_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_bulb"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_pc"
+        app:layout_constraintStart_toStartOf="@+id/onoff_pc"
+        app:layout_constraintTop_toTopOf="@+id/icon_bulb"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_bulb"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_bulb" />
+
+    <TextView
+        android:id="@+id/total_bulb"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_bulb" />
+
+
+    <ImageView
+        android:id="@+id/icon_oven"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_bulb"
+        app:layout_constraintStart_toStartOf="@+id/icon_bulb"
+        app:layout_constraintTop_toBottomOf="@+id/icon_bulb"
+        app:srcCompat="@drawable/oven_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_oven"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_bulb"
+        app:layout_constraintStart_toStartOf="@+id/onoff_bulb"
+        app:layout_constraintTop_toTopOf="@+id/icon_oven"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_oven"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_oven" />
+
+    <TextView
+        android:id="@+id/total_oven"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_oven" />
+
+
+    <ImageView
+        android:id="@+id/icon_iron"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_oven"
+        app:layout_constraintStart_toStartOf="@+id/icon_oven"
+        app:layout_constraintTop_toBottomOf="@+id/icon_oven"
+        app:srcCompat="@drawable/iron_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_iron"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_oven"
+        app:layout_constraintStart_toStartOf="@+id/onoff_oven"
+        app:layout_constraintTop_toTopOf="@+id/icon_iron"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_iron"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_iron" />
+
+    <TextView
+        android:id="@+id/total_iron"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_iron" />
+
+
+    <ImageView
+        android:id="@+id/icon_fan"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/icon_iron"
+        app:layout_constraintStart_toStartOf="@+id/icon_iron"
+        app:layout_constraintTop_toBottomOf="@+id/icon_iron"
+        app:srcCompat="@drawable/fan_mini" />
+
+    <ImageView
+        android:id="@+id/onoff_fan"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/onoff_iron"
+        app:layout_constraintStart_toStartOf="@+id/onoff_iron"
+        app:layout_constraintTop_toTopOf="@+id/icon_fan"
+        app:srcCompat="@android:drawable/radiobutton_on_background" />
+
+    <TextView
+        android:id="@+id/time_fan"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="17.5 sa."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_sure"
+        app:layout_constraintStart_toStartOf="@+id/textView_sure"
+        app:layout_constraintTop_toTopOf="@+id/icon_fan" />
+
+    <TextView
+        android:id="@+id/total_fan"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="150.5 ₺"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_tutar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_tutar"
+        app:layout_constraintTop_toTopOf="@+id/icon_fan" />
+
+    <TextView
+        android:id="@+id/headerBG"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Toplam:"
+        android:textColor="#e67e22"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/time_fan"
+        app:layout_constraintTop_toTopOf="@+id/resetButton" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="1000.5 ₺"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/total_fan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/total_fan"
+        app:layout_constraintTop_toTopOf="@+id/headerBG" />
+
+    <TextView
+        android:id="@+id/total_kw"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="100 kW"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kw_fan"
+        app:layout_constraintStart_toStartOf="@+id/kw_fan"
+        app:layout_constraintTop_toTopOf="@+id/headerBG" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:text="SIFIRLA"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/icon_fan"
+        app:layout_constraintTop_toBottomOf="@+id/icon_fan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
