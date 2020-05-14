@@ -14,20 +14,20 @@ If you want to connect the application to a real hardware, you can use Arduino. 
 
 - Login Page: Users can login to system with their user names and passwords in the login page.
 
-  <img src="Screenshots/login.jpg" width="250">
+  <img src="Screenshots/login.jpg" width="300">
 
 - Control Page: Users can activate/deactivate their devices in the control page.
 
-  <img src="Screenshots/control.jpg" width="250">
+  <img src="Screenshots/control.jpg" width="300">
 
 - Timer Page: Users can set activated time intervals for their devices in the timer page.
 
-  <img src="Screenshots/timer.jpg" width="250">
+  <img src="Screenshots/timer.jpg" width="300">
 
 - Bill Page: Users can display their usage details and payments for their devices in the bill page.
 
-  <img src="Screenshots/bill.jpg" width="250">
+  <img src="Screenshots/bill.jpg" width="300">
 
 - Details Page: Users can display how much energy consumed from renewable energy sources and how much they save up from these sources in the details page. 
 
-  <img src="Screenshots/details.jpg" width="250">
+  <img src="Screenshots/details.jpg" width="300">
